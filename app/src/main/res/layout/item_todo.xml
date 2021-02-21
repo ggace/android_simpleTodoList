@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -11,12 +12,88 @@
         android:padding="5dp"
         android:text="번호"/>
     <TextView
-        android:id="@+id/item_todo__content"
+        android:id="@+id/item_todo__textViewContent"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:textSize="20sp"
         android:padding="5dp"
         android:text="내용"/>
+
+    <EditText
+        android:visibility="gone"
+        android:id="@+id/item_todo__editTextContent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="20sp"
+        android:padding="5dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/item_todo__showModify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginRight="5sp"
+        android:insetLeft="0dp"
+        android:insetRight="0dp"
+        android:minWidth="0sp"
+        app:icon="@drawable/ic_baseline_edit_24"
+        app:iconGravity="textStart"
+        app:iconPadding="0dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/item_todo__delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginRight="5sp"
+        android:insetLeft="0dp"
+        android:insetRight="0dp"
+        android:minWidth="0sp"
+        app:icon="@drawable/ic_baseline_delete_24"
+        app:iconGravity="textStart"
+        app:iconPadding="0dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/item_todo__detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginRight="5sp"
+        android:insetLeft="0dp"
+        android:insetRight="0dp"
+        android:minWidth="0sp"
+        app:icon="@drawable/ic_baseline_assignment_24"
+        app:iconGravity="textStart"
+        app:iconPadding="0dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:visibility="gone"
+        android:id="@+id/item_todo__modify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginRight="5sp"
+        android:insetLeft="0dp"
+        android:insetRight="0dp"
+        android:minWidth="0sp"
+        app:icon="@drawable/ic_baseline_edit_attributes_24"
+        app:iconGravity="textStart"
+        app:iconPadding="0dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:visibility="gone"
+        android:id="@+id/item_todo__cancelModify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginRight="5sp"
+        android:insetLeft="0dp"
+        android:insetRight="0dp"
+        android:minWidth="0sp"
+        app:icon="@drawable/ic_baseline_cancel_24"
+        app:iconGravity="textStart"
+        app:iconPadding="0dp" />
 
 </LinearLayout>
